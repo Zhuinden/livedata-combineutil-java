@@ -3,7 +3,9 @@
 LiveData-CombineUtil-Java contains helper functions for LiveData, to combine their latest emissions.
 
 ``` java
-LiveDataCombineUtil.combine(liveData1, liveData2, liveData3, (t1, t2, t3) -> {
+import static com.zhuinden.livedatacombineutiljava.LiveDataCombineUtil.*;
+
+combine(liveData1, liveData2, liveData3, (t1, t2, t3) -> {
     // map to something
 }).observe(viewLifecycleOwner, (mapped) -> {
     // do something with mapped values
